@@ -25,7 +25,7 @@ import javax.crypto.spec.GCMParameterSpec
  * when a key has been entered AND the user presses Summarize or (if enabled) a recording ends. Nothing is sent otherwise.
  */
 enum class Provider(val label: String, val defaultModel: String) {
-    GEMINI("Gemini", "gemini-3.8-flash"),
+    GEMINI("Gemini", "gemini-3.1-flash-lite"),
     OPENROUTER("OpenRouter", "anthropic/claude-haiku-5.5"),
 }
 

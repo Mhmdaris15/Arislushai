@@ -3,6 +3,16 @@
 All notable changes are documented here. The format follows [Keep a Changelog](https://keepachangelog.com/) and the
 project uses [Semantic Versioning](https://semver.org/).
 
+## [1.0.1] - 2026-11-03
+
+### Changed
+- Default Gemini model is now `gemini-3.1-flash-lite`. It was confirmed on a real phone to summarise a live transcript;
+  the previous default (`gemini-3.8-flash`) returned 503 "high demand" during testing.
+
+### Verified
+- Live microphone path of the release build: Russian speech played from a YouTube video was captioned and translated.
+- Summary of a live transcript with Gemini. OpenRouter is still untried.
+
 ## [1.0.0] - 2026-11-03
 
 First public release. Android (arm64) only.

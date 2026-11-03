@@ -85,7 +85,7 @@ The model comparison behind the default choice is in [MODELS.md](MODELS.md).
 
 ### From a release (easiest)
 
-1. Download `arislushai-1.0.0.apk` from the [latest release](https://github.com/Mhmdaris15/Arislushai/releases/latest) and allow installing from your browser or file manager.
+1. Download `arislushai-1.0.1.apk` from the [latest release](https://github.com/Mhmdaris15/Arislushai/releases/latest) and allow installing from your browser or file manager.
 2. Open the app once, then install the speech models from a PC (below). The app cannot recognise speech without them.
 
 ### Install the models (about 220 MB, once)
@@ -158,7 +158,7 @@ The original product brief and milestone plan are kept in [`docs/PRODUCT_BRIEF.m
 - Speech models are installed from a PC; there is no in-app download yet.
 - Recognition makes mistakes on rare words, and ML Kit translates slang literally (for example «блин» became "pancake").
 - Cutting a long sentence every 6 seconds can split it, which hurts translation of the pieces.
-- **AI summaries are only partly verified.** With a real Gemini key, the model browser (46 models listed) and **Test connection** (`gemini-3.5-flash` answered "OK") worked. A full summary-and-title round trip was **not** completed: Gemini answered `503 high demand` or timed out during testing, so summary quality is unverified. OpenRouter has not been tried at all. Requests are retried up to 3 times on 429 and 5xx errors. Model names go stale: `gemini-2.5-flash` already answers 404 for new keys. Use **Browse available models** and **Test connection** if a default stops working.
+- **AI summaries:** the owner confirmed on a real phone that `gemini-3.1-flash-lite` summarises a live transcript (the default since 1.0.1). Summary quality has not been rated, and OpenRouter has not been tried. Larger Gemini models returned `503 high demand` during testing. Requests are retried up to 3 times on 429 and 5xx errors. Model names go stale: `gemini-2.5-flash` already answers 404 for new keys. Use **Browse available models** and **Test connection** if a default stops working.
 - Pressing Back on a tab other than Live closes the app.
 
 ## Roadmap
