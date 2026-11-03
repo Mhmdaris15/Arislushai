@@ -1,0 +1,11 @@
+Арислушай (Arislushai)
+Copyright 2026 Muhammad Aris Septanugroho
+
+This product includes software developed by third parties. They keep their own licenses:
+
+- sherpa-onnx (https://github.com/k2-fsa/sherpa-onnx), Apache License 2.0
+- Jetpack Compose, AndroidX and Kotlin libraries, Apache License 2.0
+- Google ML Kit, subject to the ML Kit terms (https://developers.google.com/ml-kit/terms)
+
+Speech models are not part of this repository and are downloaded separately. See MODELS.md for their sources and licenses
+(GigaAM: MIT; Silero VAD: MIT).
