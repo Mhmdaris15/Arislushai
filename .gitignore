@@ -1,0 +1,24 @@
+# Gradle / Android Studio
+.gradle/
+build/
+local.properties
+.idea/
+*.iml
+captures/
+.cxx/
+.kotlin/
+
+# Signing material must never be committed (kept in ~/.arislushai/, see app/build.gradle.kts)
+*.jks
+*.keystore
+keystore.properties
+
+# Build outputs are attached to GitHub Releases, not committed
+*.apk
+*.aab
+
+# Downloaded at build/setup time: run scripts/fetch-deps.ps1 and scripts/push-models.ps1
+app/libs/*.aar
+*.onnx
+*.wav
+_models/
